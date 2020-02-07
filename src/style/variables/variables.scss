@@ -1,0 +1,60 @@
+$images-dir: 'assets/img/png';
+
+$main-color: rgba(0, 0, 0, 255);
+$secondary-color: rgba(43, 135, 220, 255);
+$white-color: rgba(255, 255, 255, 255);
+$border-color: rgb(229, 229, 229);
+$hover-color: rgb(26, 176, 185);
+
+$mobileGutter: 10px;
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $mobileGutter;
+  padding-left: $mobileGutter;
+  width: 100%;
+  max-width: 1600px;
+}
+
+.btn {
+  @include medium;
+  font-size: 15px;
+  padding: 16px 32px;
+  border-radius: 24px;
+  color: $white-color;
+  text-transform:  uppercase;
+  background: $secondary-color;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox + label {
+  @include regular;
+  font-size: 15px;
+}
+
+.checkbox + label:after {
+	content:'';
+	display:block;
+	height:14px;
+	width:14px;
+  outline:1px solid #d6d6d6;
+  background: #f8f8f8;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.checkbox:checked + label:after {
+  border: 2px solid transparent;
+	width:10px;
+  height:10px;
+	background:url(/src/assets/img/png/checkbox.png) no-repeat;
+}
+
+
+

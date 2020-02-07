@@ -1,0 +1,67 @@
+.aside {
+  height: 100vh;
+  flex-basis: 361px;
+  background-color: #f0f0f0;
+
+
+  &__inner {
+    width: 240px;
+    margin: 0 auto;
+  }
+  
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 29px 0 24px;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__img {
+    width: 23px;
+    height: 18px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &__title {
+    @include regular;
+    font-size: 26px;
+    color: $main-color;
+  }
+
+  &__subtitle {
+    margin-top: 50px;
+    @include medium;
+    font-size: 18px;
+    color: $main-color
+  }
+
+  &__desc {
+    margin-top: 30px;
+    @include regular;
+    font-size: 18px;
+    line-height: 24px;
+    color: $main-color
+  }
+
+  &__text {
+    display: block;
+    margin-top: 30px;
+    @include regular;
+    font-size: 18px;
+    color: $main-color;
+  }
+
+  &__total {
+    display: block;
+    margin-top: 30px;
+    @include medium;
+    font-size: 18px;
+    color: $main-color;
+  }
+
+}

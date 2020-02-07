@@ -1,0 +1,166 @@
+.news {
+  padding-top: 44px;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+
+  &__title {
+    @include regular;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin-top: 15px;
+    @include medium;
+    font-size: 18px;
+    opacity: .7;
+    text-align: center;
+  }
+}
+
+.promo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 43px;
+
+  &__cell {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px; 
+    box-shadow:0px 7px 18px 0px rgba(0,0,0,0.26); 
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 22px 23px 24px 23px;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+  }
+
+  &__img {
+    position: relative;
+    width: 400px;
+    height: 200px;   
+  }
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__title {
+    @include regular;
+    font-size: 28px;
+    color: $secondary-color;
+  }
+
+  &__price {
+    display: block;
+    margin-top: 14px;
+    @include regular;
+    font-size: 24px;
+    color: $main-color;
+  }
+
+  &__price-week {
+    display: block;
+    margin-top: 10px;
+    @include regular;
+    font-size: 16px;
+    color: $main-color;
+  }
+
+  &__btn {
+    margin-top: 26px;
+    margin-bottom: 30px;
+
+    &:hover {
+      background: white;
+      color: $hover-color;
+      box-sizing: border-box;
+      padding: 14px 32px;
+      border: 2px solid $hover-color;  
+      
+      .promo__title {
+        color: $hover-color;
+      }
+  
+      .promo__detail {
+        color: $hover-color;
+      }   
+    }
+
+    &:hover .promo__desc{
+      border: 1px solid $border-color;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    border-top: 2px dotted $border-color;
+    align-self: flex-start;
+    padding-top: 30px;
+  }
+
+  &__item {
+    position: relative;
+    @include regular;
+    font-size: 15px;
+    margin-left: 25px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      background: url(/src/assets/img/svg/tick.svg);
+      height: 14px;
+      width: 14px;
+      left: -25px;
+    }
+
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+
+  &__checkbox-list {
+    align-self: flex-start;
+    margin-top: 30px;
+  }
+
+  &__checkbox-item {
+    position: relative;
+    display: flex;
+    padding-left: 25px;
+    align-items: center;
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  } 
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__detail {
+    align-self: center;  
+    display: block;
+    margin-top: 20px;
+    @include medium;
+    font-size: 15px;
+    color: $secondary-color;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+}

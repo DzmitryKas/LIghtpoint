@@ -1,0 +1,37 @@
+{
+  "name": "lightpoint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DzmitryKas/Lightpoint.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DzmitryKas/Lightpoint/issues"
+  },
+  "homepage": "https://github.com/DzmitryKas/Lightpoint#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.5",
+    "css-loader": "^3.2.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-pug-plugin": "^2.0.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "normalize.scss": "^0.1.0",
+    "swiper": "^5.3.0"
+  }
+}

@@ -1,0 +1,46 @@
+@mixin align($horizontal: true, $vertical: true, $transform: null) {
+  position: absolute;
+
+  @if ($horizontal) {
+    left: 50%;
+  }
+  @if ($vertical) {
+    top: 50%;
+  }
+
+  @if ($horizontal and $vertical) {
+    transform: translate(-50%, -50%), $transform;
+  } @else if ($horizontal) {
+    transform: translate(-50%, 0), $transform;
+  } @else {
+    transform: translate(0, -50%), $transform;
+  }
+}
+
+@mixin fill($digit: 0) {
+  position: absolute;
+  top: $digit;
+  bottom: $digit;
+  left: $digit;
+  right: $digit;
+}
+
+@mixin transition($property: all) {
+  transition: $property 0.3s linear;
+}
+
+@mixin png-icon($name, $width, $height) {
+  background: url($images_dir + $name + '.png') no-repeat;
+  width: $width + px;
+  height: $height + px;
+}
+
+@mixin regular() {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+@mixin medium() {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}

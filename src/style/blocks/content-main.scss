@@ -1,0 +1,46 @@
+.content-main {
+  &__inner {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 73px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 291px;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 2px solid $border-color;
+  }
+
+  &__item {
+    position: relative;
+    @include regular;
+    font-size: 14px;
+    color: $main-color;
+    padding-top: 9px;  
+    
+    &.active {
+      &:before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: black;
+        top: -2px;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        background-image: url(/src/assets/img/png/Vector@1X.png);
+        height: 12px;
+        width: 8px;
+        top: -18px;
+        right: -3px;
+      } 
+    }
+  }
+}
