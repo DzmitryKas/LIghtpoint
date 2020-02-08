@@ -14,6 +14,17 @@
     @include medium;
     font-size: 40px;
     color: $white-color;
+    text-align: center;
+  }
+
+  &__img {
+    background-color: black;
+    overflow: hidden;
+  }
+
+  &__bg {
+    object-fit: contain;
+    object-position: center;
   }
 }
 
@@ -25,7 +36,6 @@
 
   &-slide {
     position: relative;
-    background-color: black;
   }
 
   &-button-next {
@@ -37,8 +47,6 @@
     color: $white-color;
     left: 45px;
   }
-
-
 
   &-pagination-bullet {
     width: 6px;
@@ -53,5 +61,4 @@
   &-pagination-bullets {
     bottom: 75px !important;
   }
-
 }

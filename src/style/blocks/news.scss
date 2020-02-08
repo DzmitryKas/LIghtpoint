@@ -1,8 +1,10 @@
 .news {
-  padding-top: 44px;
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
+  &__inner {
+    padding-top: 44px;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+  }
 
   &__title {
     @include regular;
@@ -14,7 +16,7 @@
     margin-top: 15px;
     @include medium;
     font-size: 18px;
-    opacity: .7;
+    opacity: 0.7;
     text-align: center;
   }
 }
@@ -22,13 +24,24 @@
 .promo {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 43px;
+
+  @media (max-width: 1200px) {
+    justify-content: space-around;
+  }
 
   &__cell {
     display: flex;
     flex-direction: column;
-    flex-basis: 400px; 
-    box-shadow:0px 7px 18px 0px rgba(0,0,0,0.26); 
+    flex-basis: 400px;
+    box-shadow: 0px 7px 18px 0px rgba(0, 0, 0, 0.26);
+
+    &:not(:last-child) {
+      @media (max-width: 1200px) {
+        margin-bottom: 30px;
+      }
+    }
   }
 
   &__desc {
@@ -42,13 +55,17 @@
   &__top {
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
   }
 
   &__img {
     position: relative;
     width: 400px;
-    height: 200px;   
+    height: 200px;
+
+    @media (max-width: 400px) {
+      width: 300px;
+    }
   }
 
   &__bg {
@@ -87,18 +104,18 @@
       color: $hover-color;
       box-sizing: border-box;
       padding: 14px 32px;
-      border: 2px solid $hover-color;  
-      
+      border: 2px solid $hover-color;
+
       .promo__title {
         color: $hover-color;
       }
-  
+
       .promo__detail {
         color: $hover-color;
-      }   
+      }
     }
 
-    &:hover .promo__desc{
+    &:hover .promo__desc {
       border: 1px solid $border-color;
     }
   }
@@ -118,7 +135,7 @@
 
     &:before {
       position: absolute;
-      content: '';
+      content: "";
       background: url(/src/assets/img/svg/tick.svg);
       height: 14px;
       width: 14px;
@@ -143,7 +160,7 @@
     &:not(:first-child) {
       margin-top: 20px;
     }
-  } 
+  }
 
   &__bottom {
     display: flex;
@@ -151,16 +168,17 @@
   }
 
   &__detail {
-    align-self: center;  
+    align-self: center;
     display: block;
     margin-top: 20px;
     @include medium;
     font-size: 15px;
     color: $secondary-color;
     cursor: pointer;
+    @include transition(opacity);
 
     &:hover {
-      opacity: .8;
+      opacity: 0.8;
     }
   }
 }

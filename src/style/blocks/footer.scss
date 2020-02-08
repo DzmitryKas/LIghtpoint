@@ -1,5 +1,4 @@
 .footer {
-  
   &__inner {
     border-top: 1px solid $border-color;
     position: relative;
@@ -12,16 +11,31 @@
     max-width: 400px;
     width: 100%;
     margin: 0 auto;
+
+    @media (max-width: 740px) {
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-around;
+    }
   }
 
   &__item {
     @include regular;
     font-size: 14px;
     color: $main-color;
+    @include transition(opacity);
+
+    @media (max-width: 740px) {
+      margin-bottom: 10px;
+    }
 
     &:hover {
-      opacity: .8;
+      opacity: 0.8;
     }
+  }
+
+  &__link {
+    color: $main-color;
   }
 
   &__copy {
@@ -30,5 +44,10 @@
     @include regular;
     font-size: 14px;
     color: $main-color;
+
+    @media (max-width: 740px) {
+      position: relative;
+      left: auto;
+    }
   }
 }

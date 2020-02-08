@@ -31,6 +31,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
+    "animate.css": "^3.7.2",
     "normalize.scss": "^0.1.0",
     "swiper": "^5.3.0"
   }

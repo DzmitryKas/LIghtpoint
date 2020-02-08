@@ -4,84 +4,246 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Lightpoint</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-</head>
+ </head>
 <body>
-    <div class="container">
-      <div class="group">
-      <section class="content">
-        <header class="content-header">
-          <img src="./assets/img/png/logo@1X.png" alt="" class="content-header__img">
-        </header>
-        <main class="content-main">
-          <div class="content-main__inner">
-            <ul class="content-main__list">
-              <li class="content-main__item active">Create an account</li>
-              <li class="content-main__item">Billing address</li>
-              <li class="content-main__item">Payment</li>
-            </ul>
-            <div class="content-main__digital">
-              <span class="content-main__title">Digital</span>
-              <p class="content-main__text">99¢ 4 weeks only then $1.99 / week</p>
-            </div>
-            <div class="content-main__account">
-              <span class="content-main__subtitle">Create an account</span>
-              <p class="content-main__desc">Already have an account?  <span>Log in</span></p>
-              <div class="content-main__btns">
-                <button type="button" class="content-main__facebook">
-                  <div class="btn-content">
-                    <span class="btn-content__text">FACEBOOK</span>
-                    <img src="./assets/img/png/facebook@1X.png" alt="" class="btn-content__img">
-                  </div>  
-                </button>
-                <button type="button" class="content-main__google">
-                  <div class="btn-content">
-                    <span class="btn-content__text">GOOGLE</span>
-                    <img src="./assets/img/png/google@1X.png" alt="" class="btn-content__img">
-                  </div>                  </button>
-              </div>
-            </div>
-            <form action="" method='post' class="form" name='form'>
-              <div class="form__email">
-                <label for="email">Email</label>
-                <input type="text" name='email' placeholder="Email" id='email'>
-              </div>
-              <div class="form__password">
-                <label for="password">Password</label>
-                <input type="text" name='password' placeholder="Password" id='password'>
-                <button class="form__btn">Show</buttom>
-              </div>
-              <span class="form__price">Price: $ 0.99</span>
-              <div class="form__bottom">
-                <input type="button" class="form__submit btn" name='submit' value='CONTINUE'>
-              </div>
-            </form>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href='#' class="header__back">BACK</a>
+          <img class='header__logo' src="./assets/img/png/logo@1X.png" alt="">
+          <a href='index-sign.html' class="header__autorization">SIGN IN</a>  
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="news">
+        <div class="container">
+          <div class="news__inner">
+            <h1 class="news__title">All news. All of the time. On every device.</h1>
+            <p class="news__subtitle">Subscription options</p>
+            <ul class='news__list promo bounce'>
+              <li class="promo__cell">
+                <div class="promo__img">
+                  <img class='promo__bg' src="./assets/img/jpeg/pic1@1X.jpeg" alt="">
+                </div>
+                <div class="promo__desc">
+                  <div class="promo__top">
+                      <span class="promo__title">Ditital</span>
+                      <span class="promo__price">99¢</span>
+                      <span class="promo__price-week">4 weeks only then $1.99 / week</span>
+                      <buttom class="btn promo__btn">start now</buttom>  
+                      <ul class="promo__list">
+                        <li class="promo__item">Unlimited access to online content</li>
+                        <li class="promo__item">Unlimited access plus breaking news alerts</li>
+                        <li class="promo__item">A digital replica of the paper, emailed daily</li>
+                      </ul>
+                      <ul class="promo__checkbox-list">
+                        <li class="promo__checkbox-item">
+                          <input type="checkbox" class="checkbox" id="checkbox1" checked/>
+                          <label for="checkbox1">Checked</label>
+                        </li>
+                        <li class="promo__checkbox-item">
+                          <input type="checkbox" class="checkbox" id="checkbox2" />
+                          <label for="checkbox2">Empty</label>
+                        </li>
+                        <li class="promo__checkbox-item">
+                          <input type="checkbox" class="checkbox" id="checkbox3" />
+                          <label for="checkbox3">Disabled</label>
+                        </li>
+                      </ul>
+                   </div>                
+                  <div class="promo__bottom">                  
+                    <a href='#' class="promo__detail">DETAILS</a>
+                  </div>
+                </div>              
+              </li>
+              <li class="promo__cell">
+                <div class="promo__img">
+                  <img class='promo__bg' src="./assets/img/jpeg/pic2@1X.jpeg" alt="">
+                </div>
+                <div class="promo__desc">
+                  <div class="promo__top">
+                      <span class="promo__title">Print + Ditital</span>
+                      <span class="promo__price">99¢</span>
+                      <span class="promo__price-week">4 weeks only then $1.99 / week</span>
+                      <buttom class="promo__btn btn">start now</buttom>  
+                      <ul class="promo__list">
+                        <li class="promo__item">Unlimited access to online content</li>
+                        <li class="promo__item">Unlimited access plus breaking news alerts</li>
+                        <li class="promo__item">A digital replica of the paper, emailed daily</li>
+                        <li class="promo__item">Money-saving offers and weekly sales</li>
+                      </ul>    
+                   </div>                
+                  <div class="promo__bottom">                  
+                    <a href='#' class="promo__detail">DETAILS</a>
+                  </div>
+                </div>              
+              </li>
+              <li class="promo__cell">
+                <div class="promo__img">
+                  <img class='promo__bg' src="./assets/img/jpeg/pic3@1X.jpeg" alt="">
+                </div>
+                <div class="promo__desc">
+                  <div class="promo__top">
+                      <span class="promo__title">Special Offer</span>
+                      <span class="promo__price">99¢</span>
+                      <span class="promo__price-week">4 weeks only then $1.99 / week</span>
+                      <buttom class="btn promo__btn">start now</buttom>  
+                      <ul class="promo__list">
+                        <li class="promo__item">Unlimited access to online content</li>
+                        <li class="promo__item">Unlimited access plus breaking news alerts</li>
+                        <li class="promo__item">A digital replica of the paper, emailed daily</li>
+                        <li class="promo__item">Money-saving offers and weekly sales</li>
+                        <li class="promo__item">The print edition, delivered Sunday</li>
+                      </ul>
+                   </div>                
+                  <div class="promo__bottom">                  
+                    <a href='#' class="promo__detail">DETAILS</a>
+                  </div>
+                </div>              
+              </li>
+            </ul>          
           </div>
-        </main>
+        </div>
       </section>
-      <aside class="aside">
-        <div class="aside__inner">
-          <div class="aside__header">
-            <span class="aside__title">Your order</span>
-            <a href="#" class="aside__link">
-              <img src="./assets/img/png/icon@1X.png" alt="" class="aside__img">
-            </a>
+      <section class="offers">
+        <div class="container">
+          <div class="offers__inner">
+            <span class="offers__title">Offers</span>
+            <ul class="offers__list">
+              <li class="offers__item">
+                <span class="offers__subtitle">Sunday Only</span>
+                <span class="offers__text">99¢ / 4 weeks only then $1.99 / week</span>
+                <button class="offers__btn btn">start now</button>  
+              </li>
+              <li class="offers__item">
+                <span class="offers__subtitle">Thusday-Sunday</span>
+                <span class="offers__text">99¢ / 4 weeks only then $1.99 / week</span>
+                <button class="offers__btn btn">start now</button>  
+              </li>
+              <li class="offers__item">
+                <span class="offers__subtitle">Monday-Sunday</span>
+                <span class="offers__text">99¢ / 4 weeks only then $1.99 / week</span>
+                <button class="offers__btn btn">start now</button>  
+              </li>
+            </ul>
+            </div>
+          </div>      
+      </section>
+      <section class="benefits">
+        <div class="container">
+          <div class="benefits__inner">
+            <span class="benefits__title">Benefits</span>
+            <ul class="benefits__list">
+              <li class="benefits__item">
+                <img src="./assets/img/png/star@1X.png" alt="" class="benefits__img">
+                <p class="benefits__subtitle">Access to exclusive, behind&#8209the&#8209scenes stories, photos and videos from our journalists </p>
+                <p class="benefits__text">Get the substance behind the slogans with Sun Diego Union Tribune unrivaled coverage of the 2016 U.S. election.</p>
+              </li>
+              <li class="benefits__item">
+                <img src="./assets/img/png/star@1X.png" alt="" class="benefits__img">
+                <p class="benefits__subtitle">Access to exclusive, behind&#8209the&#8209scenes stories, photos and videos from our journalists </p>
+                <p class="benefits__text">Get the substance behind the slogans with Sun Diego Union Tribune unrivaled coverage of the 2016 U.S. election.</p>
+              </li>
+              <li class="benefits__item">
+                <img src="./assets/img/png/star@1X.png" alt="" class="benefits__img">
+                <p class="benefits__subtitle">Access to exclusive, behind&#8209the&#8209scenes stories, photos and videos from our journalists </p>
+                <p class="benefits__text">Get the substance behind the slogans with Sun Diego Union Tribune unrivaled coverage of the 2016 U.S. election.</p>
+              </li>
+              <li class="benefits__item">
+                <img src="./assets/img/png/star@1X.png" alt="" class="benefits__img">
+                <p class="benefits__subtitle">Access to exclusive, behind&#8209the&#8209scenes stories, photos and videos from our journalists </p>
+                <p class="benefits__text">Get the substance behind the slogans with Sun Diego Union Tribune unrivaled coverage of the 2016 U.S. election.</p>
+              </li>
+            </ul>
           </div>
-          <p class="aside__subtitle">Digital Access</p>
-          <p class="aside__desc">Unlimited access to website, and the smartphone and tablet apps.
-            $0.99</p>
-          <span class="aside__text">Sales tax may apply.</span>
-          <span class="aside__total">Total: $0.99</span>
-        </div>        
-      </aside>
-    </div>
-  </div>  
+        </div>
+      </section>
+      <section class="slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slider__img">
+                    <img src="./assets/img/png/girl@1X.png" alt="" class="slider__bg">                
+                  </div>
+                  <div class="slider__text">
+                    <p class="slider__title">Special</p>
+                    <p class="slider__subtitle">Life & Style and Travel sections</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider__img">
+                    <img src="./assets/img/png/girl@1X.png" alt="" class="slider__bg">                
+                  </div>
+                  <div class="slider__text">
+                    <p class="slider__title">Special</p>
+                    <p class="slider__subtitle">Life & Style and Travel sections</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider__img">
+                    <img src="./assets/img/png/girl@1X.png" alt="" class="slider__bg">                
+                  </div>
+                  <div class="slider__text">
+                    <p class="slider__title">Special</p>
+                    <p class="slider__subtitle">Life & Style and Travel sections</p>
+                  </div>
+                </div>  
+                <div class="swiper-slide">
+                  <div class="slider__img">
+                    <img src="./assets/img/png/girl@1X.png" alt="" class="slider__bg">                
+                  </div>
+                  <div class="slider__text">
+                    <p class="slider__title">Special</p>
+                    <p class="slider__subtitle">Life & Style and Travel sections</p>
+                  </div>
+                </div>       
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>     
+      </section>
+      <section class="description">
+        <div class="container">
+          <div class="description__inner">
+            <p class="description__title">Place some text here</p>
+            <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at nisl est. Morbi ut odio et felis ultricies tincidunt. Nullam interdum nec lectus at sagittis. Pellentesque fringilla ligula tortor, faucibus dictum massa mollis ac. Aenean sollicitudin mi quis purus placerat, vitae tempor nisl imperdiet. Integer non sodales mauris. 
+            </p>
+            <button class="description__btn">More</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Home</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">FAQ</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Contact Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Terms of services</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Privacy Policy</a>
+            </li>
+            <span class="footer__copy">© 2017</span>
+          </ul>
+        </div>
+      </div>
+    </footer>
+ 
 </body>
 </html>
 
-
-
- 
 
 

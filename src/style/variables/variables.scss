@@ -1,4 +1,4 @@
-$images-dir: 'assets/img/png';
+$images-dir: "assets/img/png";
 
 $main-color: rgba(0, 0, 0, 255);
 $secondary-color: rgba(43, 135, 220, 255);
@@ -6,15 +6,43 @@ $white-color: rgba(255, 255, 255, 255);
 $border-color: rgb(229, 229, 229);
 $hover-color: rgb(26, 176, 185);
 
-$mobileGutter: 10px;
+$mobileGutter: 20px;
+
+@-ms-viewport {
+  width: device-width;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  flex: 0 0 auto;
+}
+.main {
+  flex: 1 0 auto;
+}
+footer {
+  flex: 0 0 auto;
+}
 
 .container {
+  box-sizing: border-box;
+  max-width: 1600px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: $mobileGutter;
-  padding-left: $mobileGutter;
-  width: 100%;
-  max-width: 1600px;
+
+  @media (max-width: 1600px) {
+    padding-right: $mobileGutter;
+    padding-left: $mobileGutter;
+  }
 }
 
 .btn {
@@ -23,9 +51,16 @@ $mobileGutter: 10px;
   padding: 16px 32px;
   border-radius: 24px;
   color: $white-color;
-  text-transform:  uppercase;
+  text-transform: uppercase;
   background: $secondary-color;
   cursor: pointer;
+  outline: none;
+  @include transition(opacity);
+  @include transition(background);
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .checkbox {
@@ -38,23 +73,20 @@ $mobileGutter: 10px;
 }
 
 .checkbox + label:after {
-	content:'';
-	display:block;
-	height:14px;
-	width:14px;
-  outline:1px solid #d6d6d6;
+  content: "";
+  display: block;
+  height: 14px;
+  width: 14px;
+  outline: 1px solid #d6d6d6;
   background: #f8f8f8;
-	position:absolute;
-	top:0;
-	left:0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .checkbox:checked + label:after {
   border: 2px solid transparent;
-	width:10px;
-  height:10px;
-	background:url(/src/assets/img/png/checkbox.png) no-repeat;
+  width: 10px;
+  height: 10px;
+  background: url(/src/assets/img/png/checkbox.png) no-repeat;
 }
-
-
-

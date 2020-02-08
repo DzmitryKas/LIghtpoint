@@ -1,21 +1,17 @@
-@import 'mixins/mixins.scss';
-@import 'variables/variables.scss';
-@import '~normalize.scss/normalize.scss';
+@import "mixins/mixins.scss";
+@import "variables/variables.scss";
+@import "~normalize.scss/normalize.scss";
 
-@import 'blocks/reser.scss';
-@import 'blocks/header';
-@import 'blocks/news';
-@import 'blocks/offers';
-@import 'blocks/benefits';
-@import 'blocks/swiper.min.css';
-@import 'blocks/slider';
-@import 'blocks/description';
-@import 'blocks/footer';
-@import 'blocks/sign-page';
-@import 'blocks/aside';
-@import 'blocks/content-header';
-@import 'blocks/content-main';
-
-
-
-
+@import "blocks/reser.scss";
+@import "blocks/header";
+@import "blocks/news";
+@import "blocks/offers";
+@import "blocks/benefits";
+@import "blocks/swiper.min.css";
+@import "blocks/slider";
+@import "blocks/description";
+@import "blocks/footer";
+@import "blocks/sign-page";
+@import "blocks/aside";
+@import "blocks/content-header";
+@import "blocks/content-main";

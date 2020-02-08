@@ -26,7 +26,7 @@
 }
 
 @mixin transition($property: all) {
-  transition: $property 0.3s linear;
+  transition: $property 0.2s linear;
 }
 
 @mixin png-icon($name, $width, $height) {

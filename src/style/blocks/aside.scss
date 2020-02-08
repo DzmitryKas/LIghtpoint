@@ -1,14 +1,17 @@
 .aside {
-  height: 100vh;
+  height: auto;
   flex-basis: 361px;
   background-color: #f0f0f0;
 
+  @media (max-width: 770px) {
+    display: none;
+  }
 
   &__inner {
     width: 240px;
     margin: 0 auto;
   }
-  
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -21,9 +24,10 @@
     width: 23px;
     height: 18px;
     cursor: pointer;
+    @include transition();
 
     &:hover {
-      opacity: .8;
+      opacity: 0.8;
     }
   }
 
@@ -37,7 +41,7 @@
     margin-top: 50px;
     @include medium;
     font-size: 18px;
-    color: $main-color
+    color: $main-color;
   }
 
   &__desc {
@@ -45,7 +49,7 @@
     @include regular;
     font-size: 18px;
     line-height: 24px;
-    color: $main-color
+    color: $main-color;
   }
 
   &__text {
@@ -63,5 +67,4 @@
     font-size: 18px;
     color: $main-color;
   }
-
 }

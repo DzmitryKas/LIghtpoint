@@ -26,6 +26,10 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/index-sign.html',
+      filename: 'index-sign.html'
+    }),
     new ExtractTextPlugin({
       filename: 'style.css'
     }),
