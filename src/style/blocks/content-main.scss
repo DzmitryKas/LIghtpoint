@@ -12,6 +12,7 @@
     max-width: 291px;
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 52px;
     border-top: 2px solid $border-color;
   }
 
@@ -42,5 +43,204 @@
         right: -3px;
       } 
     }
+  }
+
+  &__digital {
+    padding: 20px 0;
+    border-top: 1px solid $border-color;
+  }
+
+  &__title {
+    display: block;
+    text-align: center;
+    @include regular;
+    font-size: 26px;
+    color: $main-color;
+  }
+
+  &__text {
+    margin-top: 6px;
+    text-align: center;
+    @include regular;
+    font-size: 16px;
+    color: $main-color;
+  }
+
+  &__account {
+    padding: 40px 0;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__subtitle {
+    display: block;
+    text-align: center;
+    @include regular;
+    font-size: 28px;
+    color: $main-color;    
+  }
+
+  &__desc {
+    margin-top: 27px;
+    text-align: center;
+    @include regular;
+    color: $main-color;
+
+    span {
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+
+  &__btns {
+    margin-top: 46px;
+    display: flex;
+    justify-content: center;
+  }  
+
+  &__facebook {
+    padding: 11px 11px 11px 28px;
+    background-color: #3c5a99;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    margin-right: 22px;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    .btn-content__text {
+      color: white;
+      @include medium;
+      font-size: 15px;
+    }
+  }
+
+  &__google {
+    padding: 11px 11px 11px 28px;
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+
+    
+    &:hover {
+      opacity: .8;
+    }
+
+    .btn-content__text {
+      color: $main-color;
+      @include medium;
+      font-size: 15px;
+    }
+  }
+}
+
+.btn-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 142px;
+
+  &__img {
+    height: 24px;
+  }
+}
+
+.form {
+  margin-top: 66px;
+
+  &__email {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      @include regular;
+      font-size: 12px;
+      color: $main-color;
+    }
+
+    input {
+      border: none;
+      height: 33px;
+      width: 100%;
+      border-bottom: 1px solid $main-color;
+      @include regular;
+      font-size: 18px;
+      color: $main-color;
+
+      &::placeholder {
+        @include regular;
+        font-size: 18px;
+        color: $main-color;
+      } 
+    }
+  }
+
+  &__password {
+    position: relative;
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      @include regular;
+      font-size: 12px;
+      color: $main-color;
+    }
+
+    input {
+      border: none;
+      height: 33px;
+      width: 100%;
+      border-bottom: 1px solid $main-color;
+      @include regular;
+      font-size: 18px;
+      color: $main-color;
+
+      &::placeholder {
+        @include regular;
+        font-size: 18px;
+        color: $main-color;
+      } 
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    right: 0;
+    bottom: 9px;
+    border: none;
+    background: transparent;
+    @include regular;
+    font-size: 16px;
+    color: rgba(43, 135, 220, 255);
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &__price {
+    display: block;
+    @include medium;
+    font-size: 18px;
+    color: $main-color;
+    margin-top: 26px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__submit {
+    margin-top: 56px;
+    padding: 16px 38px;
+    border: none;
+    @include medium;
+    font-size: 15px;
+    color: white;
   }
 }
